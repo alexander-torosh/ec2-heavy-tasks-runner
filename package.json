@@ -1,0 +1,13 @@
+{
+  "name": "ec2-heavy-tasks-runner",
+  "version": "1.0.0",
+  "description": "Example application for spinning up/down EC2 instances for running heavy tasks",
+  "main": "index.js",
+  "repository": "https://github.com/alexander-torosh/ec2-heavy-tasks-runner",
+  "author": "Alexander Torosh <webtorua@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "aws-sdk": "^2.441.0"
+  }
+}
