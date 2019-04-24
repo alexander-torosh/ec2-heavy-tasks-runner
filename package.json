@@ -2,12 +2,20 @@
   "name": "ec2-heavy-tasks-runner",
   "version": "1.0.0",
   "description": "Example application for spinning up/down EC2 instances for running heavy tasks",
-  "main": "index.js",
   "repository": "https://github.com/alexander-torosh/ec2-heavy-tasks-runner",
   "author": "Alexander Torosh <webtorua@gmail.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "nodemon src/index.js --exec babel-node"
+  },
   "dependencies": {
-    "aws-sdk": "^2.441.0"
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "aws-sdk": "^2.441.0",
+    "nodemon": "^1.18.11"
   }
 }
